@@ -1,0 +1,76 @@
+<!--DOCTYPE html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--Meta tag below to let webpage display well on I nternet Explorer 9 and below and chrome version 1-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <!-- Meta tag below to fit webpage to screen size-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Meta SEO Tools below-->
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="title" content="" />
+    <!-- Miscellaneous Open graph below-->
+    <meta property="og:author" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:keywords" content="" />
+    <meta property="og:title" content="" />
+    <!-- For Browser Bars themeing Below -->
+    <meta name="theme-color" content="blue" />
+    <meta name="msapplication-navbutton-color" content="blue" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blue" />
+    <!-- Page Styling Sheet below-->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/CSS/loader.css" />
+    <!-- Page Programming Below-->
+    <script src="./assets/JS/Index.js" defer></script>
+    <script src="./assets/JS/Greet.js" defer></script>
+    <script src="./assets/JS/loader.js" defer></script>
+    <!-- <script src="Pay.js" defer></script> -->
+    <title>All Pay</title>
+</head>
+
+<body>
+    <div class="loaderbody">
+        <div class="loader"></div>
+    </div>
+    <div class="wholePage">
+        <div class="head">
+            <img src="./Assets/Graphics/Lordtx Logo.png" class="logo" />
+            <p class="allpay"> All Pay</p>
+        </div>
+        <div class="user">
+            <i> Codelordtx</i>
+            <img src="./assets/Graphics/Codelordtx.png" class="codelord">
+        </div>
+
+        <div class="Page">
+            <p class="greeter">Hello</p>
+
+            <div class="box">
+                <span class="TokenBalParent">Token bal: </span>
+                <span class="tokensBal"></span>
+                <span id="HideTokenBal" class="HideTokenBal">***</span>
+
+                <button class="showHide">Hide</button>
+                <span class="accNO">Acc No: 8129740187</span>
+                <span class="trnxh">Transaction History >>> </span>
+            </div>
+            <div class="PageToCont">
+                <p class="pageNumbers"> Input the number of pages to be printed </p>
+                <input type="number" class="NumberOfPages" placeholder="Number of pages" onkeyup="PayToken()" min="0"
+                    max="100000000" !important />
+                <button class="token"> Pay </button>
+            </div>
+        </div>
+        <div class="clrfb">
+            <button class="clearData"> Clear Data</button>
+            <button class="refreshPage"> Refresh Page </button>
+        </div>
+    </div>
+</body>
+
+</html>
